@@ -17,7 +17,7 @@ const AboutUs = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <a href="/" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">首页</a>
-                <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">公司简介</a>
+                <a href="/about" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">公司简介</a>
                 <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">解决方案</a>
                 <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">成功案例</a>
                 <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">技术支持及产品服务</a>
@@ -38,7 +38,11 @@ const AboutUs = () => {
 
       {/* Hero Section - About Us */}
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>')] opacity-20"></div>
+        <div className="absolute inset-0 opacity-20">
+          <div className="w-full h-full" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cpattern id='grid' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 10 0 L 0 0 0 10' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grid)'/%3E%3C/svg%3E")`
+          }}></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">关于我们</h1>
